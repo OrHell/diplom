@@ -1,0 +1,198 @@
+<html>
+<head>
+    <link href="bulma.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <title>Обратная связь</title>
+    <style>
+        .bg{
+          background-image: url(img/body_bg.png);
+         
+        }
+        .post {
+          position: relative;
+          padding: 20px;
+          flex-basis: auto;
+        }
+        
+        .post__category {
+          font-size: .8rem;
+          text-transform: uppercase;
+        }
+        
+        .post__title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin: 20px 0 10px;
+        }
+        
+        .post__content {
+          font-size: 1.3rem;
+          margin-bottom: 50px;
+        }
+        
+        .post__category,
+        .post__permalink {
+          color: #4a4a4a;
+          text-decoration: underline;
+        }
+        
+        .post__permalink {
+          position: absolute;
+          bottom: 20px;
+        }
+        
+        .fb-auto {
+          flex-basis: auto;
+        }
+        
+        .pink {
+          background: #ffdae0;
+        }
+        
+        .gray {
+          background: #e7f0da;
+        }
+        
+        .green {
+          background: #e7f0da;
+        }
+        
+        .gold {
+          background: #fcf5b6;
+        }
+        
+        .blue {
+          background: #cae9ef;
+        }
+        
+        .red {
+          background: #f8c9c1;
+        }
+        
+        
+        </style>
+</head>
+
+<body>
+
+    <div class="tabs is-centered">
+    
+        <ul>
+          <li class = ""><a>Недвижимость</a></li>
+          <li><a>Авто Фото</a></li>
+          <li><a>Работа</a></li>
+          <li><a>Другое</a></li>
+          <li class = ""><a>Обратная связь</a></li>
+        </ul>
+      </div>
+
+      <section class="section ">
+        <div class="container">
+           
+      
+                <div class="modal-content">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+          </div>
+          
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+          </div>
+          
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+</div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="dist/js/modal-fx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        // highlight.js
+        (function () {
+            document.querySelectorAll('pre code').forEach(function (block) {
+                hljs.highlightBlock(block);
+            });
+        })();
+    </script>  
+</body>
+</html>
